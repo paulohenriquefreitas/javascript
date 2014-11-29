@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<title>
+			The virtual rock
+		</title>
+		<script type="text/javascript">
+		function touchRock(){
+			var username = prompt("What is your name ?","Enter your name here");
+			if(username){
+				alert("Its good to meet you " + username + 	".");
+				document.getElementById("rock.png").src="rock_smile.png";
+			}
+		}
+
+		</script>
+	</head>
+	<body onload="alert('hello , im your pet rock.')">
+	
+		<div style="margin-top:100px ; text-align:center">
+			<img id="rockImg" src="rock.png" alt="altrock" onclick="touchRock()">
+		</div>
+	</body>
+</html>
